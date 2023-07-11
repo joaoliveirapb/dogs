@@ -1,0 +1,28 @@
+.header {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, .1);
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  background-color: #FFF;
+  top: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  padding: .5rem 0;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #333;
+}
