@@ -1,4 +1,5 @@
 import { Eye } from 'lucide-react'
+import { Image } from '../Helper/Image'
 import styles from './FeedPhotosItem.module.css'
 
 export function FeedPhotosItem({ photo, setModalPhoto }) {
@@ -8,7 +9,7 @@ export function FeedPhotosItem({ photo, setModalPhoto }) {
 
   return (
     <li className={styles.photo} onClick={handleClick}>
-      <img src={photo.src} alt={photo.title} />
+      <Image src={photo.src} alt={photo.title} />
       <span className={styles.visualizacao}>
         <Eye size={20} />
         {photo.acessos}
