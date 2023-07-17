@@ -1,6 +1,7 @@
 import { useContext } from 'react'
 import { Navigate, Route, Routes } from 'react-router-dom'
 import { UserContext } from '../UserContext'
+import { NotFound } from '../components/Helper/NotFound'
 import { LoginCreate } from '../components/Login/LoginCreate'
 import { LoginForm } from '../components/Login/LoginForm'
 import { LoginPasswordLost } from '../components/Login/LoginPasswordLost'
@@ -20,6 +21,7 @@ export function Login() {
           <Route path="criar" element={<LoginCreate />} />
           <Route path="perdeu" element={<LoginPasswordLost />} />
           <Route path="resetar" element={<LoginPasswordReset />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
     </section>
