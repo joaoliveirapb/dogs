@@ -6,6 +6,7 @@ import { useForm } from '../../hooks/useForm'
 import { Button } from '../FormItems/Button'
 import { Input } from '../FormItems/Input'
 import { Error } from '../Helper/Error'
+import { Head } from '../Helper/Head'
 
 export function LoginCreate() {
   const username = useForm()
@@ -27,6 +28,7 @@ export function LoginCreate() {
 
   return (
     <section className="animeLeft">
+      <Head title="Crie sua conta" />
       <h1 className="title">Cadastre-se</h1>
       <form onSubmit={handleSubmit}>
         <Input label="Usuário" type="text" name="username" {...username} />

@@ -6,6 +6,7 @@ import { Button } from '../FormItems/Button'
 import stylesBtn from '../FormItems/Button.module.css'
 import { Input } from '../FormItems/Input'
 import { Error } from '../Helper/Error'
+import { Head } from '../Helper/Head'
 import styles from './LoginForm.module.css'
 
 export function LoginForm() {
@@ -23,6 +24,7 @@ export function LoginForm() {
 
   return (
     <section className="animeLeft">
+      <Head title="Login" />
       <h1 className="title">Login</h1>
       <form onSubmit={handleSubmit} className={styles.form}>
         <Input label="Usuário" type="text" name="username" {...username} />
